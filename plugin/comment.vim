@@ -11,10 +11,14 @@ function! MyComment()
     let commentPattern = '^\s*"'
     let addComment = '"'
     let removeComment = '"'
-  elseif (&ft == 'ruby' || &ft == 'python')
+  elseif (&ft == 'ruby' || &ft == 'python' || &ft == 'sh')
     let commentPattern = '^\s*#'
     let addComment = '#'
     let removeComment = '#'
+  elseif (&ft == 'sql')
+    let commentPattern = '^\s*--'
+    let addComment = '--'
+    let removeComment = '--'
   endif
 
   let currentLine = getline('.')

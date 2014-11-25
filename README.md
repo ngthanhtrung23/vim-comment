@@ -8,3 +8,5 @@ Currently support the following languages:
 * Ruby
 * Python
 * Vim script
+* SQL
+* Bash
