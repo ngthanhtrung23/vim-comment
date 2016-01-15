@@ -3,7 +3,7 @@ function! MyComment()
   let addComment = ''
   let removeComment = ''
 
-  if (&ft == 'cpp' || &ft == 'c' || &ft == 'java')
+  if (&ft == 'cpp' || &ft == 'c' || &ft == 'java' || &ft == 'javascript')
     let commentPattern = '^\s*\/\/'
     let addComment = '//'
     let removeComment = '\/\/'
